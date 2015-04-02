@@ -1,6 +1,6 @@
-import core from '../bower_components/metal/src/core';
-import SoyComponent from '../bower_components/metal/src/soy/SoyComponent';
-import ComponentRegistry from '../bower_components/metal/src/component/ComponentRegistry';
+import core from '../bower_components/metaljs/src/core';
+import SoyComponent from '../bower_components/metaljs/src/soy/SoyComponent';
+import ComponentRegistry from '../bower_components/metaljs/src/component/ComponentRegistry';
 import './Boilerplate.soy.js';
 
 /**

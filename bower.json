@@ -9,6 +9,6 @@
     "tests"
   ],
   "dependencies": {
-    "metal": "liferay/metal"
+    "metaljs": "liferay/metal#master"
   }
 }

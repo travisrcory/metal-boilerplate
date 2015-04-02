@@ -1,5 +1,5 @@
-import async from '../bower_components/metal/src/async/async';
-import dom from '../bower_components/metal/src/dom/dom';
+import async from '../bower_components/metaljs/src/async/async';
+import dom from '../bower_components/metaljs/src/dom/dom';
 import Boilerplate from '../src/Boilerplate';
 
 var component;
