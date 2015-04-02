@@ -6,9 +6,9 @@
  * Component parts could be named by the developer.
  */
 {template .content}
-  {delcall Boilerplate.header data="all" /}
-  {delcall Boilerplate.body data="all" /}
-  {delcall Boilerplate.footer data="all" /}
+	{delcall Boilerplate.header data="all" /}
+	{delcall Boilerplate.body data="all" /}
+	{delcall Boilerplate.footer data="all" /}
 {/template}
 
 /**
@@ -16,8 +16,8 @@
  * @param headerContent
  */
 {template .header}
-  <a class="close" data-onclick="close">Close</a>
-  {$headerContent}
+	<a class="close" data-onclick="close">Close</a>
+	{$headerContent}
 {/template}
 
 /**
@@ -25,7 +25,7 @@
  * @param bodyContent
  */
 {template .body}
-  {$bodyContent}
+	{$bodyContent}
 {/template}
 
 /**
@@ -33,5 +33,5 @@
  * @param footerContent
  */
 {template .footer}
-  {$footerContent}
+	{$footerContent}
 {/template}
