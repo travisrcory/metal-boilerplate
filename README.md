@@ -5,26 +5,27 @@ Metal.js Boilerplate
 
 ```
 npm install
+```
+
+```
 bower install
 ```
 
 ## Build
 
-### Build component to a global namespace
-
 ```
 gulp build:globals
 ```
 
-## Test
+```
+gulp watch:globals
+```
 
-### Run unit tests
+## Test
 
 ```
 gulp test
 ```
-
-### Watch unit tests
 
 ```
 gulp test:watch
