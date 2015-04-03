@@ -1,6 +1,11 @@
 {
   "name": "metal-boilerplate",
   "version": "0.0.0",
+  "description": "Metal.js boilerplate.",
+  "keywords": [
+    "metal",
+    "metaljs"
+  ],
   "ignore": [
     "**/.*",
     "node_modules",
