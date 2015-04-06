@@ -14,7 +14,7 @@ bower install
 ## Build
 
 ```
-gulp build:globals
+gulp build
 ```
 
 ```

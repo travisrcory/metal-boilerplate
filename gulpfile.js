@@ -1,3 +1,5 @@
 require('metaljs')({
-	bundleFileName: 'boilerplate.js'
+  bundleFileName: 'boilerplate.js'
 });
+
+require('require-dir')('tasks');
