@@ -18,7 +18,7 @@ gulp build
 ```
 
 ```
-gulp watch:globals
+gulp watch
 ```
 
 ## Test

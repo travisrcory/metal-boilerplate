@@ -20,4 +20,4 @@ gulp.task('build', function(cb) {
   runSequence('build:globals', 'build:min', cb);
 });
 
-
+gulp.task('watch', ['watch:globals']);
