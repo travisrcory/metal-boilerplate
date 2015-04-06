@@ -113,8 +113,8 @@ Boilerplate.ATTRS = {
 Boilerplate.ELEMENT_CLASSES = 'boilerplate';
 
 /**
- * Registers component by name. Relevant to link component with Soy template
- * name.
+ * Registers component by name. Relevant to expose component constructor to be
+ * able to be invoked from inside other templates.
  */
 ComponentRegistry.register('Boilerplate', Boilerplate);
 
