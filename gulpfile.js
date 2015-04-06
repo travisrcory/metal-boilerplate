@@ -4,20 +4,20 @@ var uglify = require('gulp-uglify');
 var runSequence = require('run-sequence');
 
 require('metaljs')({
-  bundleFileName: 'boilerplate.js'
+	bundleFileName: 'boilerplate.js'
 });
 
 gulp.task('build:min', function() {
-  return gulp.src('build/boilerplate.js')
-      .pipe(uglify())
-      .pipe(rename(function (path) {
-        path.basename += '-min';
-      }))
-      .pipe(gulp.dest('build'));
+	return gulp.src('build/boilerplate.js')
+		.pipe(uglify())
+		.pipe(rename(function (path) {
+			path.basename += '-min';
+		}))
+		.pipe(gulp.dest('build'));
 });
 
 gulp.task('build', function(cb) {
-  runSequence('build:globals', 'build:min', cb);
+	runSequence('build:globals', 'build:min', cb);
 });
 
 gulp.task('watch', ['watch:globals']);
