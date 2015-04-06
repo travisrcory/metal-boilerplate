@@ -14,23 +14,36 @@ class Boilerplate extends SoyComponent {
 		super(opt_config);
 	}
 
-	/**
-	 * @inheritDoc
-	 */
+  /**
+   * Lifecycle. Creation phase of the component happens once after the
+   * component is instantiated, therefore its the initial phase of the
+   * component Lifecycle. Be conscious about actions performed in this phase
+   * to not compromise instantiation time with operations that can be
+   * postponed to further phases. It's recommended to bind component custom
+   * events in this phase, in contrast to DOM events that must be bind on
+   * attach phase.
+   */
+  created() {
+  }
+
+  /**
+   * Lifecycle. When attached, the component element is appended to the DOM
+   * and any other action to be performed must be implemented in this method,
+   * such as, binding DOM events. A component can be re-attached multiple
+   * times, therefore the undo behavior for any action performed in this phase
+   * must be implemented on the detach phase.
+   */
 	attached() {
-		// Component is in document.
 	}
 
 	/**
-	 * @inheritDoc
-	 */
+   * Lifecycle. When detached, the component element is removed from the DOM
+   * and any other action to be performed must be implemented in this method,
+   * such as, unbinding DOM events. A component can be detached multiple
+   * times, therefore the undo behavior for any action performed in this phase
+   * must be implemented on the attach phase.
+   */
 	detached() {
-		// Component is not in document.
-	}
-
-	disposeInternal() {
-		// Component is disposed.
-		super.disposeInternal();
 	}
 
 	/**
