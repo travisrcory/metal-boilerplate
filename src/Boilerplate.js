@@ -7,12 +7,12 @@ import './Boilerplate.soy.js';
  * Boilerplate component.
  */
 class Boilerplate extends SoyComponent {
-	/**
-	 * @inheritDoc
-	 */
-	constructor(opt_config) {
-		super(opt_config);
-	}
+  /**
+   * @inheritDoc
+   */
+  constructor(opt_config) {
+    super(opt_config);
+  }
 
   /**
    * Lifecycle. Creation phase of the component happens once after the
@@ -33,75 +33,75 @@ class Boilerplate extends SoyComponent {
    * times, therefore the undo behavior for any action performed in this phase
    * must be implemented on the detach phase.
    */
-	attached() {
-	}
+  attached() {
+  }
 
-	/**
+  /**
    * Lifecycle. When detached, the component element is removed from the DOM
    * and any other action to be performed must be implemented in this method,
    * such as, unbinding DOM events. A component can be detached multiple
    * times, therefore the undo behavior for any action performed in this phase
    * must be implemented on the attach phase.
    */
-	detached() {
-	}
+  detached() {
+  }
 
-	/**
-	 * Sets component visibility to false. Invoked by soy template event binding.
-	 */
-	close() {
-		this.visible = false;
-	}
+  /**
+   * Sets component visibility to false. Invoked by soy template event binding.
+   */
+  close() {
+    this.visible = false;
+  }
 
-	/**
-	 * Invokes when visible attribute changes to synchronize the visible state.
-	 * @param {boolean} visible
-	 */
-	syncVisible(visible) {
-		this.element.style.display = visible ? null : 'none';
-	}
+  /**
+   * Invokes when visible attribute changes to synchronize the visible state.
+   * @param {boolean} visible
+   */
+  syncVisible(visible) {
+    this.element.style.display = visible ? null : 'none';
+  }
 }
 
 Boilerplate.ATTRS = {
-	/**
-	 * Attribute that holds the body content.
-	 * @type {string}
-	 * @default ''
-	 */
-	bodyContent: {
-		validator: core.isString,
-		value: ''
-	},
+  /**
+   * Attribute that holds the body content.
+   * @type {string}
+   * @default ''
+   */
+  bodyContent: {
+    validator: core.isString,
+    value: ''
+  },
 
-	/**
-	 * Attribute that holds the header content.
-	 * @type {string}
-	 * @default ''
-	 */
-	headerContent: {
-		validator: core.isString,
-		value: ''
-	},
+  /**
+   * Attribute that holds the header content.
+   * @type {string}
+   * @default ''
+   */
+  headerContent: {
+    validator: core.isString,
+    value: ''
+  },
 
-	/**
-	 * Attribute that holds the footer content.
-	 * @type {string}
-	 * @default ''
-	 */
-	footerContent: {
-		validator: core.isString,
-		value: ''
-	},
+  /**
+   * Attribute that holds the footer content.
+   * @type {string}
+   * @default ''
+   */
+  footerContent: {
+    validator: core.isString,
+    value: ''
+  },
 
-	/**
-	 * Attribute that holds the visibility.
-	 * @type {boolean}
-	 * @default true
-	 */
-	visible: {
-		validator: core.isBoolean,
-		value: true
-	}
+  /**
+   * Attribute that holds the visibility.
+   * @type {boolean}
+   * @default true
+   */
+  visible: {
+    validator: core.isBoolean,
+    value: true
+  }
 };
 
 /**
