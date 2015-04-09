@@ -14,7 +14,7 @@
     "url": "http://github.com/eduardolundgren/metal-boilerplate.git"
   },
   "dependencies": {
-    "metaljs": "liferay/metal"
+    "metaljs": "liferay/metal.js"
   },
   "devDependencies": {
     "babel": "^4.7.3",
