@@ -1,5 +1,5 @@
-import async from 'metaljs/src/async/async';
-import dom from 'metaljs/src/dom/dom';
+import async from 'bower:metaljs/src/async/async';
+import dom from 'bower:metaljs/src/dom/dom';
 import Boilerplate from '../src/Boilerplate';
 
 describe('Boilerplate', function() {
